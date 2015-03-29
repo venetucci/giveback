@@ -12,5 +12,15 @@
  *
  *= require_self
  */
-@import 'bourbon';
-@import 'neat';
+@import "bourbon";
+@import "base/grid-settings";
+@import "neat";
+@import "base/base";
+
+// modules
+
+@import "modules/landing";
+@import "modules/details";
+@import "modules/compliments";
+@import "modules/global-nav";
+

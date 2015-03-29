@@ -1,0 +1,109 @@
+.hero {
+  background-color: $white;
+
+  &-title {
+    color: $dark-gray;
+    margin-bottom: em(5);
+    text-align: center;
+  }
+
+  &-subtitle {
+    font-style: italic;
+    font-weight: 300;
+    margin-top: em(5);
+    text-align: center;
+  }
+
+  &-main-text {
+    padding: 0 0 em(50);
+    text-align: center;
+    @include span-columns(8 of 12);
+    @include shift(2);
+  }
+
+}
+
+.organization {
+  background-color: $base-background-color;
+
+  &-title {
+    color: $white;
+    text-align: center;
+  }
+
+  &-subtitle {
+    color: $white;
+    font-weight: 400;
+    padding-bottom: 1em;
+    text-align: center;
+
+    a {
+      border-bottom: 1px solid $white;
+      color: $white;
+      display: inline-block;
+      line-height: 0.97em;
+      margin: 0.2em auto;
+      text-shadow: /* stroke around*/
+        0 0 1px $teal,
+        0 0 1px $teal,
+        0 0 2px $teal,
+        0 0 2px $teal,
+        0 0 2px $teal,
+        0 0 2px $teal,
+        0 0 2px $teal,
+        0 0 2px $teal,
+        0 0 2px $teal,
+        0 -5px 0 $teal, /* clear vertically*/
+        0 -1px 0 $teal,
+        0 -2px 0 $teal,
+        0 -2px 0 $teal,
+        0 -4px 0 $teal,
+        0 -5px 0 $teal,
+        0 -6px 0 $teal
+        ;
+
+      &:hover {
+        border-bottom: 1px solid $action-color;
+        color: $action-color;
+      }
+    }
+  }
+
+  &-card {
+    background-color: $white;
+    border-bottom: em(3) solid shade($white, 10%);
+    border-radius: $base-border-radius;
+    float: none;
+    margin-bottom: $secondary-spacing;
+    padding: em(25);
+
+    @include span-columns(4 of 12);
+    @include shift(4);
+
+    &-title {
+      margin: 0 0 em(15);
+    }
+
+    &-text {
+      font-weight: 300;
+    }
+
+    &-cta {
+      background-color: $action-color;
+      border-bottom: em(3) solid $dark-pink;
+      border-radius: $base-border-radius;
+      color: $white;
+      display: inline-block;
+      font-weight: 500;
+      margin-top: em(20);
+      padding: em(5) em(10);
+
+      &:hover {
+        background-color: tint($action-color, 20%);
+        border-bottom: em(3) solid tint($dark-pink, 20%);
+        cursor: pointer;
+      }
+    }
+  }
+
+}

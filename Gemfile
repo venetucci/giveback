@@ -1,6 +1,4 @@
 source 'https://rubygems.org'
-ruby '2.2.1'
-
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.2.1'
@@ -22,6 +20,9 @@ gem 'neat', '~> 1.7.2'
 
 # Templating language
 gem 'slim', '~> 3.0.3'
+
+# CSS Vendor Prefixes
+gem 'autoprefixer-rails', '~> 5.1.8'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
