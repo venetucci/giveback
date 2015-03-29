@@ -24,6 +24,9 @@ gem 'slim', '~> 3.0.3'
 # CSS Vendor Prefixes
 gem 'autoprefixer-rails', '~> 5.1.8'
 
+# JSON serialization
+gem 'active_model_serializers', '~> 0.9.3'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -36,6 +39,9 @@ group :development, :test do
 
   # Testing framework
   gem 'rspec-rails', '~> 3.0.0.beta2'
+
+  # Testing matchers
+  gem 'rspec-collection_matchers', '~> 1.1.2'
 
   # Integration testing
   gem 'capybara', '~> 2.4.4'
