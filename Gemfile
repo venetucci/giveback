@@ -13,6 +13,18 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
+# Sass mixins
+gem 'bourbon', '~> 4.2.1'
+
+# Static pages
+gem 'high_voltage', '~> 2.2.1'
+
+# Grid framework
+gem 'neat', '~> 1.7.2'
+
+# Templating language
+gem 'slim', '~> 3.0.3'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
