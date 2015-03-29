@@ -1,0 +1,24 @@
+body {
+  background-color: $base-background-color;
+  margin: 0;
+}
+
+.wrap-container {
+  @include outer-container;
+  padding: 0 $gutter;
+}
+
+.centered-content {
+  @include fill-parent;
+  @include clearfix;
+  text-align: center;
+}
+
+.body-content-container {
+  padding: 1em 0;
+  position: relative;
+
+  @include media($medium-screen-up) {
+    padding: $base-spacing 0;
+  }
+}
