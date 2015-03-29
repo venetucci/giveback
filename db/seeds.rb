@@ -5,4 +5,4 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Complement.find_or_create_by(message: "You rock")
+Compliment.find_or_create_by(message: "You rock")
