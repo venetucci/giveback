@@ -13,6 +13,11 @@ select {
   font-size: $base-font-size;
 }
 
+input:focus {
+  box-shadow: 4px 4px 0 darken($base-accent-color, 10%);
+  outline: none;
+}
+
 label {
   font-weight: 600;
   margin-bottom: $small-spacing / 2;
@@ -29,7 +34,7 @@ label {
 #{$all-text-inputs},
 select[multiple=multiple],
 textarea {
-  background-color: $base-background-color;
+  background-color: $base-accent-color;
   border: $base-border;
   border-radius: $base-border-radius;
   box-sizing: border-box;
