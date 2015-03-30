@@ -20,12 +20,14 @@ ActiveRecord::Schema.define(version: 20150330002335) do
   end
 
   create_table "organizations", force: :cascade do |t|
-    t.string   "name",         default: "", null: false
-    t.string   "slug",         default: "", null: false
-    t.string   "info_url",     default: "", null: false
-    t.string   "donation_url", default: "", null: false
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.string   "name",             default: "", null: false
+    t.text     "description",      default: "", null: false
+    t.string   "reason_to_donate", default: "", null: false
+    t.string   "slug",             default: "", null: false
+    t.string   "info_url",         default: "", null: false
+    t.string   "donation_url",     default: "", null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
   end
 
 end
