@@ -1,0 +1,95 @@
+.send {
+  border: 1px solid $white;
+  border-radius: $base-border-radius;
+  float: right;
+  padding: em(5) em(10);
+  transition: 0.3s ease-in-out;
+
+  a {
+    color: $white;
+  }
+
+  &:hover {
+    background-color: rgba($white, 0.2);
+    cursor: pointer;
+  }
+
+  &-icon {
+    background: image-url("twitter-icon.png");
+    background-repeat: no-repeat;
+    background-size: em(19);
+    display: inline-block;
+    height: em(15);
+    margin-left: em(10);
+    width: em(20);
+  }
+}
+
+.compliment {
+  color: $white;
+  margin-top: 15%;
+  text-align: center;
+
+  &-refresh {
+    text-align: center;
+
+    a {
+      border-bottom: 1px solid $white;
+      color: $white;
+      display: inline-block;
+      line-height: 0.97em;
+      margin: 0.2em auto;
+      opacity: 0.8;
+      text-shadow: /* stroke around*/
+        0 0 1px $teal,
+        0 0 1px $teal,
+        0 0 2px $teal,
+        0 0 2px $teal,
+        0 0 2px $teal,
+        0 0 2px $teal,
+        0 0 2px $teal,
+        0 0 2px $teal,
+        0 0 2px $teal,
+        0 -5px 0 $teal, /* clear vertically*/
+        0 -1px 0 $teal,
+        0 -2px 0 $teal,
+        0 -2px 0 $teal,
+        0 -4px 0 $teal,
+        0 -5px 0 $teal,
+        0 -6px 0 $teal
+        ;
+
+      &:hover {
+        border-bottom: 1px solid $white;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+.compliment-cta {
+  margin-top: 16%;
+  text-align: center;
+
+  &-button {
+    background-color: $action-color;
+    border-bottom: em(3) solid $dark-pink;
+    border-radius: $base-border-radius;
+    display: inline-block;
+    font-weight: 500;
+    margin-right: em(10);
+    margin-top: em(20);
+    padding: em(5) em(10);
+
+    a {
+      color: $white;
+    }
+
+    &:hover {
+      background-color: tint($action-color, 20%);
+      border-bottom: em(3) solid tint($dark-pink, 20%);
+      cursor: pointer;
+    }
+  }
+}
