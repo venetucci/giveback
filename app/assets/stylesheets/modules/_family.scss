@@ -1,0 +1,151 @@
+.family {
+  background-color: $white;
+  border-radius: $base-border-radius;
+  margin-left: 2.5%;
+  padding: em(40);
+  width: 95%;
+
+  @include media($medium-screen-up) {
+    @include span-columns(10 of 12);
+    @include shift(1);
+
+    padding: em(90);
+  }
+
+  &-section-one {
+
+    &-content {
+      @include span-columns(10 0f 10);
+
+      @include media($medium-screen-up) {
+        @include span-columns(6.8 of 10);
+
+        margin-left: em(10);
+      }
+    }
+
+    &-image {
+      @include span-columns(12 of 12);
+
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background: image-url("julian-michelle.png");
+      display: block;
+      height: em(200);
+
+      @include media($medium-screen-up) {
+        @include span-columns(3 of 10);
+
+        background-size: 100%;
+        display: inline-block;
+        height: em(120);
+      }
+
+    }
+
+  }
+
+  &-section-two-image {
+    background-repeat: no-repeat;
+    background-size: em(260);
+    background: image-url("sf-move.png");
+    display: block;
+    height: em(110);
+    margin: 0 auto;
+    width: em(260);
+
+    @include media($medium-screen-up) {
+      background-size: em(460);
+      height: em(162);
+      margin-bottom: em(80);
+      margin-top: em(60);
+      width: em(460);
+    }
+  }
+
+  &-content {
+
+    &-text {
+      @include span-columns(12 of 12);
+
+      font-size: em(18);
+      font-weight: 300;
+      line-height: em(30);
+      padding-bottom: $small-spacing/2;
+
+      &-secondary {
+        @include span-columns(8 of 12);
+
+        font-weight: 300;
+        padding-bottom: $small-spacing/2;
+      }
+    }
+
+    &-cta {
+      background-color: $action-color;
+      border-bottom: em(3) solid $dark-pink;
+      border-radius: $base-border-radius;
+      display: inline-block;
+      font-weight: 500;
+      margin-right: em(10);
+      margin-top: em(10);
+      padding: em(5) em(10);
+
+      a {
+        color: $white;
+      }
+
+      &:hover {
+        background-color: tint($action-color, 20%);
+        border-bottom: em(3) solid tint($dark-pink, 20%);
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-section-two {
+    @include span-columns(12);
+  }
+
+}
+
+.highlight {
+  display: inline-block;
+  font-weight: 500;
+
+  &-color {
+    color: $base-accent-color;
+  }
+
+  &-centered {
+    text-align: center;
+  }
+}
+
+.michelle {
+  display: inline-block;
+  height: em(25);
+  width: em(30);
+}
+
+.julian {
+  display: inline-block;
+  height: em(27);
+  width: em(30);
+}
+
+.family-section-three-image {
+  @include span-columns(10 of 10);
+  background: image-url("faces.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: em(300);
+  display: block;
+
+  @include media($medium-screen-up) {
+    @include span-columns(3 of 10);
+      background-size: 100%;
+      display: inline-block;
+      height: em(210);
+  }
+}
