@@ -6,3 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Compliment.find_or_create_by(message: "You rock")
+Organization.find_or_create_by(
+  name: 'RailsBridge',
+  slug: 'railsbridge',
+  info_url: 'http://www.railsbridge.com',
+  donation_url: 'http://www.railsbridge.org/help/donate')

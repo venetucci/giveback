@@ -1,20 +1,19 @@
 .details-hero
   section.body-content-container.wrap-container
     h3.details-hero-title
-      | So you're interested in donating to Black Girls Code.
+      ' So you're interested in donating to #{@organization.name}
     .details-hero-link
-      | I haven't made my decision yet, I want to 
-      a href="http://www.blackgirlscode.com/"target="_blank" learn more
-      |.
+      ' I haven't made my decision yet, I want to #{link_to 'learn more', @organization.info_url}.
 
     .details-hero-text
       p.details-hero-compliment
         | You look rather dashing today.
         span.details-hero-compliment-refresh
       p
-        | We’re about to send you off to the donations page. Don’t worry, you can always come back and donate to other organizations. 
+        | We’re about to send you off to the donations page. Don’t worry, you can always come back and donate to other
+          organizations.
       p
-        | Before you go, would you like to let us know that you donated? 
+        | Before you go, would you like to let us know that you donated?
 
       .details-hero-yes
         .details-hero-yes-text
@@ -26,7 +25,7 @@
     h3.details-form-title
       | Leave Us A Note
     h5.details-form-subtitle
-      | This form is just for us. Black Girls Code won’t see this information. All of this information is optional. 
+      | This form is just for us. #{@organization.name} won’t see this information. All of this information is optional.
 
     .details-form-field
       .details-form-field-half
