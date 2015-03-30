@@ -22,26 +22,10 @@
       | Feel free to donate in our name. Or not. Just tell these great organizations to 
       a href="http://i3.kym-cdn.com/photos/images/newsfeed/000/264/241/9e9.gif" take your money
       |.
-    .organization-card
-      h4.organization-card-title
-        | Black Girls Code
-      .organization-card-text
-        | Mission: To increase the number of women of color in the digital space by empowering girls of color ages 7 to 17 to become innovators in STEM fields, leaders in their communities, and builders of their own futures through exposure to computer science and technology.
-      .organization-card-cta
-        | I feel like diversity in tech is important
-
-    .organization-card
-      h4.organization-card-title
-        | Annie Wright Schools
-      .organization-card-text
-        | Founded in 1884, the Annie Wright Upper School is an all-girls high school in Tacoma, WA. Annie Wright gives students the opportunity to do the things they love in authentic and meaningful ways, and provide an empowering atmosphere for young women. This also happens to be Michelle’s alma mater, and she’s forever grateful for the scholarship that gave her the opportunity to receive such a high calibar education. She’s getting a little teary just writing this. 
-      .organization-card-cta
-        | I want to help a girl receive an excellent education
-
-    .organization-card
-      h4.organization-card-title
-        | Girls Who Code
-      .organization-card-text
-        | Mission: Launched in Spring 2012, Girls Who Code is a national nonprofit organization working to close the gender gap in the technology and engineering sectors. With support from public and private partners, Girls Who Code works to educate, inspire, and equip high school girls with the skills and resources to pursue opportunities in computing fields.
-      .organization-card-cta
-        | I’d like to support young girls in tech
+    - Organization.all.each do |organization|
+      .organization-card
+        h4.organization-card-title
+          = organization.name
+        .organization-card-text
+          = organization.description
+        = link_to organization.reason_to_donate, organization, class: 'organization-card-cta'
