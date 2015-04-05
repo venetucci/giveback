@@ -8,7 +8,8 @@ describe 'Compliments API' do
     expect(json_response).to eq({
       compliment: {
         id: compliment.id,
-        message: compliment.message
+        message: compliment.message,
+        message_share_url: compliment.message_share_url
       }
     }.as_json)
   end

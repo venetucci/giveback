@@ -1,11 +1,15 @@
 class ComplimentsController < ApplicationController
 
   def index
-    @compliment = Compliment.order("random()").limit(1).first
+    @compliment = Compliment.random
   end
 
   def show
-    @compliment = Compliment.find(params[:id])
+    @compliment = if params[:id] == 'random'
+      Compliment.random
+    else
+      Compliment.find(params[:id])
+    end
     render json: @compliment
   end
 

@@ -9,8 +9,10 @@
 
     .details-hero-text
       p.details-hero-compliment
-        | Have we mentioned... You look rather dashing today.
-        span.details-hero-compliment-refresh
+        | Have we mentioned...
+        span.js-compliment-message
+          = @compliment.message
+        span.details-hero-compliment-refresh.js-compliment-reloader
       p
         | We’re about to send you off to the donations page. Don’t worry, you can always come back and donate to other
           organizations.
