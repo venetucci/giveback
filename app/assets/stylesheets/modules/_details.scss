@@ -33,11 +33,16 @@
   }
 
   &-text {
-    @include span-columns (6 of 12);
-    @include shift(3);
+    @include span-columns (10 of 12);
+    @include shift(1);
 
-    p {
-      margin-bottom: em(30);
+    @include media($medium-screen-up) {
+      @include span-columns (6 of 12);
+      @include shift(3);
+
+      p {
+        margin-bottom: em(30);
+      }
     }
   }
 
@@ -72,17 +77,33 @@
   }
 
   &-field {
-    @include span-columns(6 of 12);
-    @include shift(3);
+    @include span-columns(12 of 12);
+
+    @include media($medium-screen-up) {
+      @include span-columns(6 of 12);
+      @include shift(3);
+    }
 
     &-half {
-      @include span-columns(3 of 6);
-      display: inline-block;
+      @include span-columns(10 of 12);
+      @include shift(1);
+
+      @include media($medium-screen-up) {
+        @include span-columns(3 of 6);
+        @include shift(0);
+
+        display: inline-block;
+      }
     }
 
     &-full {
-      @include span-columns(6 of 12);
-      @include shift(3);
+      @include span-columns(10 of 12);
+      @include shift(1);
+
+      @include media($medium-screen-up) {
+        @include span-columns(6 of 12);
+        @include shift(3);
+      }
     }
 
     &-box {

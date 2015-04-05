@@ -1,5 +1,6 @@
 .hero {
   background-color: $white;
+  padding-top: em(50);
 
   &-title {
     background: image-url("projectgiveback.png");
