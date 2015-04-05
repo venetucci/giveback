@@ -25,7 +25,6 @@
     }
 
     &-image {
-      @include span-columns(12 of 12);
 
       background: image-url("julian-michelle.png");
       background-repeat: no-repeat;
@@ -64,8 +63,6 @@
   &-content {
 
     &-text {
-      @include span-columns(12 of 12);
-
       font-size: em(18);
       font-weight: 300;
       line-height: em(30);
@@ -87,7 +84,6 @@
   &-section-two {
     @include span-columns(12);
   }
-
 }
 
 .highlight {
@@ -125,9 +121,87 @@
 
   @include media($medium-screen-up) {
     @include span-columns(3 of 10);
-      background-size: 100%;
-      display: inline-block;
-      height: em(210);
+
+    background-size: 100%;
+    display: inline-block;
+    height: em(210);
+    margin-top: em(40);
+  }
+}
+
+.family-names {
+  background-color: tint($light-gray, 60);
+  border-radius: $base-border-radius;
+  margin: em(10) em(0) em(30);
+  padding: em(20) 0;
+  text-align: center;
+
+  @include media($medium-screen-up) {
+    margin: em(10) em(80) em(30);
+    padding: em(20) 0;
+  }
+}
+
+.family-names-item {
+  color: tint($base-font-color, 40);
+  font-family: "Courier";
+  font-size: em(12);
+  height: em(25);
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+
+  @include media($medium-screen-up) {
+    font-size: em(20);
+  }
+}
+
+.family-names-item:nth-child(1) {
+  animation: type 9s steps(37, end);
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  border-right: 1px solid $base-font-color;
+  margin-bottom: em(10);
+  width: em(365);
+
+  @include media($medium-screen-up) {
+    width: em(380);
+  }
+}
+
+.family-names-item:nth-child(2) {
+  animation: type-b 8s steps(32, end);
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+  border-right: 1px solid $base-font-color;
+  width: em(320);
+}
+
+
+.family-names-cursor {
+  animation: blink 1s infinite;
+  display: inline-block;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes type-b {
+  0% {
+    width: 0;
+  }
+
+  25% {
+    width: 100;
+  }
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
   }
 }
 
