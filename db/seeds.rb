@@ -5,7 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Compliment.find_or_create_by(message: "You rock")
+messages = [
+  "You rock",
+  "You look nice today",
+]
+messages.map { |message| Compliment.find_or_create_by(message: message) }
 
 organizations = [{
   name: 'RailsBridge',

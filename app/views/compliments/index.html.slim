@@ -1,7 +1,7 @@
 section.body-content-container.wrap-container
 
   h2.compliment
-    | You are a generous and wise person
+    = @compliment.message
 
   .compliment-refresh
     a href="" Hit me with a new compliment
@@ -10,5 +10,5 @@ section.body-content-container.wrap-container
     .compliment-cta-button
       a href="/" OK, that's enough. I want to donate!
     .send
-      a class="twitter popup" href="http://twitter.com/share?text=Send%20someone%20a%20compliment:" Send someone a compliment
+      a class="twitter popup" href="http://twitter.com/share?text=#{@compliment.message_share_copy}" Send someone a compliment
       .send-icon
