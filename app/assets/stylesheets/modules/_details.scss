@@ -19,8 +19,8 @@
       width: em(15);
 
       &:hover {
-        opacity: 0.5;
         cursor: pointer;
+        opacity: 0.5;
       }
     }
   }
@@ -76,8 +76,8 @@
     @include shift(3);
 
     &-half {
-      display: inline-block;
       @include span-columns(3 of 6);
+      display: inline-block;
     }
 
     &-full {
@@ -96,24 +96,7 @@
   }
 
   &-cta {
-    background-color: $action-color;
-    border-bottom: em(3) solid $dark-pink;
-    border-radius: $base-border-radius;
-    display: inline-block;
-    font-weight: 500;
-    margin-top: em(20);
-    margin-right: em(10);
-    padding: em(5) em(10);
-
-    a {
-      color: $white;
-    }
-
-    &:hover {
-      background-color: tint($action-color, 20%);
-      border-bottom: em(3) solid tint($dark-pink, 20%);
-      cursor: pointer;
-    }
+    @include main-button;
 
     &-addendum {
       display: inline-block;

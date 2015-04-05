@@ -2,9 +2,23 @@
   background-color: $white;
 
   &-title {
+    background: image-url("projectgiveback.png");
+    background-repeat: no-repeat;
+    background-size: em(140);
     color: $dark-gray;
+    display: block;
+    height: em(45);
     margin-bottom: em(5);
+    margin: em(25) auto 0;
     text-align: center;
+    width: em(140);
+
+    @include media($medium-screen-up) {
+      background-size: em(240);
+      height: em(45);
+      margin: 0 auto;
+      width: em(240);
+    }
   }
 
   &-subtitle {
@@ -15,16 +29,18 @@
   }
 
   &-main-text {
-    padding: 0 0 em(50);
-    text-align: center;
     @include span-columns(8 of 12);
     @include shift(2);
+
+    padding: 0 0 em(50);
+    text-align: center;
   }
 
 }
 
 .organization {
   background-color: $base-accent-color;
+  display: block;
 
   &-title {
     color: $white;
@@ -70,6 +86,9 @@
   }
 
   &-card {
+    @include span-columns(10 of 12);
+    @include shift(1);
+
     background-color: $white;
     border-bottom: em(3) solid shade($white, 10%);
     border-radius: $base-border-radius;
@@ -77,8 +96,12 @@
     margin-bottom: $secondary-spacing;
     padding: em(25);
 
-    @include span-columns(4 of 12);
-    @include shift(4);
+    @include media($medium-screen-up) {
+      @include span-columns(4 of 12);
+      @include shift(4);
+
+      float: none;
+    }
 
     &-title {
       margin: 0 0 em(15);
@@ -89,21 +112,7 @@
     }
 
     &-cta {
-      background-color: $action-color;
-      border-bottom: em(3) solid $dark-pink;
-      border-radius: $base-border-radius;
-      color: $white;
-      display: inline-block;
-      font-weight: 500;
-      margin-top: em(20);
-      padding: em(5) em(10);
-
-      &:hover {
-        background-color: tint($action-color, 20%);
-        border-bottom: em(3) solid tint($dark-pink, 20%);
-        cursor: pointer;
-      }
+      @include main-button;
     }
   }
-
 }

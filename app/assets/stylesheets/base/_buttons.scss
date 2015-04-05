@@ -28,3 +28,44 @@ button {
     opacity: 0.5;
   }
 }
+
+@mixin button {
+  border-radius: $base-border-radius;
+  color: $white;
+  display: inline-block;
+  font-weight: 500;
+  margin-right: em(10);
+  padding: em(5) em(10);
+  transition: 0.3s ease-in-out;
+
+  a {
+    color: $white;
+  }
+
+}
+
+@mixin main-button {
+  @include button;
+  background-color: $action-color;
+  border-bottom: em(3) solid $dark-pink;
+  margin-top: em(20);
+
+  &:hover {
+    background-color: tint($action-color, 20%);
+    border-bottom: em(3) solid tint($dark-pink, 20%);
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+@mixin secondary-button {
+  @include button;
+
+  background-color: shade($base-dark-accent-color, 10%);
+  border-bottom: 0.1875em solid shade($base-dark-accent-color, 30%);
+
+  &:hover {
+    background-color: shade($base-dark-accent-color, 15%);
+    cursor: pointer;
+  }
+}

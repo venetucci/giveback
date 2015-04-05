@@ -1,21 +1,21 @@
-  .hero
-    section.body-content-container.wrap-container
+= render "layouts/partials/global_nav"
 
-      h1.hero-title Project Give Back
+section.hero
+  .body-content-container.wrap-container
+    h1.hero-title
+    h5.hero-subtitle
+      | A project by
+      a href="http://www.twitter.com/mvenetucci" target="_blank"  Michelle 
+      |  and
+      a href="http://www.twitter.com/jatescher" target="_blank"  Julian 
+    .hero-main-text
+      p
+        | Gifts are awesome. We don’t mind receiving them. We’re actually really into giving them.
+      p
+        | That being said, we feel pretty fortunate in our life. Sometimes, the best gift is giving back. We know you love us a lot, so instead of giving us something for us, we’d love if you’d consider giving to an organization that we support.
 
-      h5.hero-subtitle
-        | A project by
-        a href="http://www.twitter.com/mvenetucci" target="_blank"  Michelle 
-        |  and
-        a href="http://www.twitter.com/jatescher" target="_blank"  Julian 
-
-      .hero-main-text
-        p
-          | Gifts are awesome. We don’t mind receiving them. We’re actually really into giving them.
-        p
-          | That being said, we feel pretty fortunate in our life. Sometimes, the best gift is giving back. We know you love us a lot, so instead of giving us something for us, we’d love if you’d consider giving to an organization that we support.
-
-  section.organization.body-content-container
+section.organization
+  .body-content-container
     h3.organization-title
       | Organizations We Like
     h5.organization-subtitle
@@ -29,3 +29,5 @@
         .organization-card-text
           = organization.description
         = link_to organization.reason_to_donate, organization, class: 'organization-card-cta'
+
+= render "layouts/partials/global_footer"
