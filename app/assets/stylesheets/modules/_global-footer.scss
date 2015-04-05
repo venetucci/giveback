@@ -1,0 +1,23 @@
+.global-footer {
+  background-color: $base-dark-accent-color;
+  bottom: 0;
+  color: $white;
+  display: block;
+  font-weight: 300;
+  height: em(70);
+  padding: 4em 0;
+  width: 100%;
+}
+
+.footer-content {
+  text-align: center;
+
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  :hover {
+    color: $action-color;
+  }
+}

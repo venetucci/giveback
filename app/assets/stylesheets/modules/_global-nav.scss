@@ -1,0 +1,21 @@
+.global-nav {
+  background-color: $base-dark-accent-color;
+  height: em(70);
+  padding: 1em 0;
+  position: relative;
+}
+
+.logo a {
+  color: $white;
+  display: inline-block;
+  float: left;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  padding-top: em(10);
+}
+
+.nav-cta {
+  @include secondary-button;
+  display: inline-block;
+  float: right;
+}

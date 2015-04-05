@@ -27,9 +27,9 @@
     &-image {
       @include span-columns(12 of 12);
 
+      background: image-url("julian-michelle.png");
       background-repeat: no-repeat;
       background-size: 100%;
-      background: image-url("julian-michelle.png");
       display: block;
       height: em(200);
 
@@ -40,15 +40,13 @@
         display: inline-block;
         height: em(120);
       }
-
     }
-
   }
 
   &-section-two-image {
+    background: image-url("sf-move.png");
     background-repeat: no-repeat;
     background-size: em(260);
-    background: image-url("sf-move.png");
     display: block;
     height: em(110);
     margin: 0 auto;
@@ -82,24 +80,7 @@
     }
 
     &-cta {
-      background-color: $action-color;
-      border-bottom: em(3) solid $dark-pink;
-      border-radius: $base-border-radius;
-      display: inline-block;
-      font-weight: 500;
-      margin-right: em(10);
-      margin-top: em(10);
-      padding: em(5) em(10);
-
-      a {
-        color: $white;
-      }
-
-      &:hover {
-        background-color: tint($action-color, 20%);
-        border-bottom: em(3) solid tint($dark-pink, 20%);
-        cursor: pointer;
-      }
+      @include main-button;
     }
   }
 
@@ -125,13 +106,13 @@
 .michelle {
   display: inline-block;
   height: em(25);
-  width: em(30);
+  margin: 0 em(7) em(-6);
 }
 
 .julian {
   display: inline-block;
-  height: em(27);
-  width: em(30);
+  height: em(25);
+  margin: 0 em(4) em(-6);
 }
 
 .family-section-three-image {
@@ -139,8 +120,8 @@
   background: image-url("faces.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  height: em(300);
   display: block;
+  height: em(300);
 
   @include media($medium-screen-up) {
     @include span-columns(3 of 10);
@@ -149,3 +130,4 @@
       height: em(210);
   }
 }
+

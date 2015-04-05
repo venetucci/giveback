@@ -1,18 +1,5 @@
 .send {
-  border: 1px solid $white;
-  border-radius: $base-border-radius;
-  float: right;
-  padding: em(5) em(10);
-  transition: 0.3s ease-in-out;
-
-  a {
-    color: $white;
-  }
-
-  &:hover {
-    background-color: rgba($white, 0.2);
-    cursor: pointer;
-  }
+  @include secondary-button;
 
   &-icon {
     background: image-url("twitter-icon.png");
@@ -67,29 +54,12 @@
   }
 }
 
-
 .compliment-cta {
   margin-top: 16%;
   text-align: center;
 
   &-button {
-    background-color: $action-color;
-    border-bottom: em(3) solid $dark-pink;
-    border-radius: $base-border-radius;
-    display: inline-block;
-    font-weight: 500;
-    margin-right: em(10);
-    margin-top: em(20);
-    padding: em(5) em(10);
-
-    a {
-      color: $white;
-    }
-
-    &:hover {
-      background-color: tint($action-color, 20%);
-      border-bottom: em(3) solid tint($dark-pink, 20%);
-      cursor: pointer;
-    }
+    @include main-button;
+    margin-bottom: em(15);
   }
 }
