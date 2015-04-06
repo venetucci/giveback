@@ -32,6 +32,7 @@
       background-size: 100%;
       display: block;
       height: em(200);
+      margin-bottom: em(30);
 
       @include media($medium-screen-up) {
         @include span-columns(3 of 10);
@@ -39,6 +40,7 @@
         background-size: 100%;
         display: inline-block;
         height: em(120);
+        margin-bottom: 0;
       }
     }
   }
@@ -118,7 +120,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   display: block;
-  height: em(300);
+  height: em(350);
 
   @include media($medium-screen-up) {
     @include span-columns(3 of 10);
