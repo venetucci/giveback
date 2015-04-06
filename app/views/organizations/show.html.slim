@@ -13,18 +13,14 @@
         span.js-compliment-message
           = @compliment.message
         span.details-hero-compliment-refresh.js-compliment-reloader
+          = image_tag "refresh.png", class: "details-hero-compliment-refresh.js-compliment-reloader"
       p
         | We’re about to send you off to the donations page. Don’t worry, you can always come back and donate to other
           organizations.
       p
         | Before you go, would you like to let us know that you donated?
 
-      .details-hero-yes
-        .details-hero-yes-text
-          | Yes
-        span.details-hero-yes-arrow
-
-.details-form
+#form.details-form
   section.body-content-container.wrap-container
     h3.details-form-title
       | Leave Us A Note

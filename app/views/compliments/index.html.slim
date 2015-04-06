@@ -1,14 +1,15 @@
-section.body-content-container.wrap-container
+.compliment-page
+  section.body-content-container.wrap-container
 
-  h2.compliment.js-compliment-message
-    = @compliment.message
+    h2.compliment.js-compliment-message
+      = @compliment.message
 
-  .compliment-refresh
-    a class="js-compliment-reloader" href="#" Hit me with a new compliment
+    .compliment-refresh
+      a class="js-compliment-reloader" href="#" Hit me with a new compliment
 
-  .compliment-cta
-    .compliment-cta-button
-      a href="/" OK, that's enough. I want to donate!
-    .send
-      a class="twitter popup js-compliment-share-url" href="#{@compliment.message_share_url}" Send someone a compliment
-      .send-icon
+    .compliment-cta
+      .compliment-cta-button
+        a href="/" OK, that's enough. I want to donate!
+      .send
+        a class="twitter popup js-compliment-share-url" href="#{@compliment.message_share_url}" Send someone a compliment
+        .send-icon

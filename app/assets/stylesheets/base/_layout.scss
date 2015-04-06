@@ -1,21 +1,23 @@
 body {
-  background-color: $base-accent-color;
+  background-color: $base-dark-accent-color;
   margin: 0;
 }
 
 .wrap-container {
   @include outer-container;
+
   padding: 0 $gutter;
 }
 
 .centered-content {
   @include fill-parent;
   @include clearfix;
+
   text-align: center;
 }
 
 .body-content-container {
-  padding: 1em 0;
+  padding: 1em em(10);
   position: relative;
 
   @include media($medium-screen-up) {
