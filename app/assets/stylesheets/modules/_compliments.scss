@@ -1,5 +1,14 @@
+.compliment-page {
+  background-color: $base-accent-color;
+  height: 100vh;
+}
+
 .send {
   @include secondary-button;
+
+  @include media($medium-screen-up) {
+    margin: 0 em(5) em(15);
+  }
 
   &-icon {
     background: image-url("twitter-icon.png");
@@ -60,6 +69,7 @@
 
   &-button {
     @include main-button;
-    margin-bottom: em(15);
+    // margin-bottom: em(15);
+    margin: 0 em(5) em(15);
   }
 }

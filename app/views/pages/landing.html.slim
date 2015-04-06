@@ -13,6 +13,8 @@ section.hero
         | Gifts are awesome. We don’t mind receiving them. We’re actually really into giving them.
       p
         | That being said, we feel pretty fortunate in our life. Sometimes, the best gift is giving back. We know you love us a lot, so instead of giving us something for us, we’d love if you’d consider giving to an organization that we support.
+      p
+        | (If you don't know us, you can still donate. We won't tell.)
 
 section.organization
   .body-content-container
@@ -29,5 +31,8 @@ section.organization
         .organization-card-text
           = organization.description
         = link_to organization.reason_to_donate, organization, class: 'organization-card-cta'
+    .organization-missed
+      | Are we missing an awesome organization? 
+      a href="http://twitter.com/jatescher" target="_blank" Let us know.
 
 = render "layouts/partials/global_footer"

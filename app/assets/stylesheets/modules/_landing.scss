@@ -1,6 +1,9 @@
 .hero {
   background-color: $white;
-  padding-top: em(50);
+
+  @include media($medium-screen-up) {
+    padding-top: em(50);
+  }
 
   &-title {
     background: image-url("projectgiveback.png");
@@ -30,11 +33,16 @@
   }
 
   &-main-text {
-    @include span-columns(8 of 12);
-    @include shift(2);
+    @include span-columns(10 of 12);
+    @include shift(1);
 
     padding: 0 0 em(50);
     text-align: center;
+
+    @include media($medium-screen-up) {
+      @include span-columns(8 of 12);
+      @include shift(2);
+    }
   }
 
 }
@@ -87,9 +95,6 @@
   }
 
   &-card {
-    @include span-columns(10 of 12);
-    @include shift(1);
-
     background-color: $white;
     border-bottom: em(3) solid shade($white, 10%);
     border-radius: $base-border-radius;
@@ -114,6 +119,35 @@
 
     &-cta {
       @include main-button;
+    }
+  }
+
+  &-missed {
+    @include span-columns(10 of 12);
+    @include shift(1);
+
+    color: $white;
+    float: none;
+
+    @include media($medium-screen-up) {
+      @include span-columns(4 of 12);
+      @include shift(4);
+
+      color: $white;
+      float: none;
+    }
+
+    a {
+      border-bottom: 1px solid $white;
+      color: $white;
+      display: inline-block;
+      line-height: 0.97em;
+      margin: 0.2em auto;
+
+      &:hover {
+        border-bottom: 1px solid $action-color;
+        color: $action-color;
+      }
     }
   }
 }

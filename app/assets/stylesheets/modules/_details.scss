@@ -10,17 +10,22 @@
     display: inline-block;
 
     &-refresh {
-      background: image-url("refresh.png");
-      background-repeat: no-repeat;
-      background-size: em(14);
       display: inline-block;
       height: em(15);
       margin-left: em(10);
+      position: absolute;
       width: em(15);
+
+      @include media($medium-screen-up) {
+        right: em(310);
+        width: em(15);
+      }
 
       &:hover {
         cursor: pointer;
         opacity: 0.5;
+        transform: rotate(-360deg);
+        transition-duration: 0.8s;
       }
     }
   }
@@ -45,27 +50,10 @@
       }
     }
   }
-
-  &-yes {
-    color: $base-accent-color;
-    font-weight: 600;
-    letter-spacing: 1.3px;
-
-    &-arrow {
-      border-left: 7px solid transparent;
-      border-right: 7px solid transparent;
-      border-top: 7px solid $base-accent-color;
-      font-size: 0;
-      height: 0;
-      line-height: 0;
-      width: 0;
-    }
-  }
-
-
 }
 
 .details-form {
+  background-color: $base-accent-color;
   color: $white;
 
   &-title {
