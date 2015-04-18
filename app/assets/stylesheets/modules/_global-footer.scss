@@ -17,3 +17,14 @@
     @include underline;
   }
 }
+
+.color-palette {
+
+  @include media($medium-screen-up) {
+    background-image: url("color-palette-footer.png");
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 25%;
+    margin: em(15) auto 0;
+  }
+}
