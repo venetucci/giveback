@@ -14,10 +14,6 @@
 
   a {
     color: $white;
-    text-decoration: underline;
-  }
-
-  :hover {
-    color: $action-color;
+    @include underline;
   }
 }

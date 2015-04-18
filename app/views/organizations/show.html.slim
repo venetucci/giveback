@@ -52,9 +52,9 @@
         | Would you like to leave us a note?
       input.details-form-field-box
 
-      .details-form-cta
-        a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=Rk57jqpZH8gWI0Q90Q6xx_upzUhwf2E69qQvw9B0-g8MIE05VtBcgJqpNgm&dispatch=5885d80a13c0db1f8e263663d3faee8de62a88b92df045c56447d40d60b23a7c" target="_blank" Submit form and donate
-      .details-form-cta-addendum
-        | (It's ok if it's empty!)
+      button type="submit" class="details-form-cta"
+        | Submit form and donate
+      button type="submit" class="details-form-cta-blank"
+        | Continue without form
 
 = render "layouts/partials/global_footer"

@@ -1,5 +1,5 @@
 // Typography
-$base-font-family: $helvetica;
+$base-font-family: "brandon-grotesque", sans-serif;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
@@ -40,3 +40,38 @@ $action-color: $pink;
 $base-border-color: $white;
 $base-border: 1px solid $base-border-color;
 
+// Custom underline
+
+@mixin underline {
+  border-bottom: 1px solid $white;
+  color: $white;
+  display: inline-block;
+  line-height: 0.82em;
+  margin: 0.2em auto;
+
+  &:hover {
+    border-bottom: 1px solid $action-color;
+    color: $action-color;
+  }
+}
+
+@mixin underline-descender {
+  text-shadow: /* stroke around*/
+    0 0 1px $teal,
+    0 0 1px $teal,
+    0 0 2px $teal,
+    0 0 2px $teal,
+    0 0 2px $teal,
+    0 0 2px $teal,
+    0 0 2px $teal,
+    0 0 2px $teal,
+    0 0 2px $teal,
+    0 -5px 0 $teal, /* clear vertically*/
+    0 -1px 0 $teal,
+    0 -2px 0 $teal,
+    0 -2px 0 $teal,
+    0 -4px 0 $teal,
+    0 -5px 0 $teal,
+    0 -6px 0 $teal
+    ;
+}
