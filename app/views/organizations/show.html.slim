@@ -20,7 +20,8 @@
       p
         | Before you go, would you like to let us know that you donated?
 
-#form.details-form
+= form_for @donation, html: { id: 'form', class: 'details-form' } do |f|
+  = f.hidden_field :organization_id
   section.body-content-container.wrap-container
     h3.details-form-title
       | Leave Us A Note
@@ -29,32 +30,29 @@
 
     .details-form-field
       .details-form-field-half
-        .details-form-field-title
+        = f.label :name, class: 'details-form-field-title'
           | What's your name?
-        input.details-form-field-box
+        = f.text_field :name, class: 'details-form-field-box'
 
       .details-form-field-half
-        .details-form-field-title
+        = f.label :email, class: 'details-form-field-title'
           | What's your email address?
-
-        input.details-form-field-box
+        = f.text_field :email, class: 'details-form-field-box'
 
     .details-form-field-full
-      .details-form-field-title
+      = f.label :name, class: 'details-form-field-title'
         | How much are you planning to donate?
-      input.details-form-field-box
+      = f.text_field :amount, class: 'details-form-field-box'
 
-      .details-form-field-title
+      = f.label :name, class: 'details-form-field-title'
         | Are you planning to leave a note in the donation? What will it be?
-      input.details-form-field-box
+      = f.text_field :organization_note, class: 'details-form-field-box'
 
-      .details-form-field-title
+      = f.label :name, class: 'details-form-field-title'
         | Would you like to leave us a note?
-      input.details-form-field-box
+      = f.text_field :personal_note, class: 'details-form-field-box'
 
-      button type="submit" class="details-form-cta"
-        | Submit form and donate
-      button type="submit" class="details-form-cta-blank"
-        | Continue without form
+      = f.submit 'Submit form and donate', class: "details-form-cta"
+      = f.submit 'Continue without form', class: "details-form-cta-blank"
 
 = render "layouts/partials/global_footer"
