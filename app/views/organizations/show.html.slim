@@ -46,11 +46,11 @@
 
       = f.label :name, class: 'details-form-field-title'
         | Are you planning to leave a note in the donation? What will it be?
-      = f.text_field :organization_note, class: 'details-form-field-box'
+      = f.text_area :organization_note, class: 'details-form-field-box', rows: "4"
 
       = f.label :name, class: 'details-form-field-title'
         | Would you like to leave us a note?
-      = f.text_field :personal_note, class: 'details-form-field-box'
+      = f.text_area :personal_note, class: 'details-form-field-box', rows: "4"
 
       = f.submit 'Submit form and donate', class: "details-form-cta"
       = f.submit 'Continue without form', class: "details-form-cta-blank"
