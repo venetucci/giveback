@@ -97,21 +97,35 @@
     &-box {
       background-color: $white;
       border-radius: $base-border-radius;
-      height: em(40);
-      margin: em(10) 0 em(30);
-      padding: em(5) em(10);
+      margin: 0 0 em(30);
       width: 100%;
     }
   }
 
   &-cta {
     @include main-button;
-    margin: 0 em(5) em(15);
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    margin-right: em(5);
+    margin-top: 0;
+    padding-bottom: em(8);
+
+    &:focus {
+      box-shadow: none;
+    }
 
     &-blank {
       @include secondary-button;
-      margin: 0 em(5) em(15);
+      border-left: 0;
+      border-right: 0;
+      border-top: 0;
+      margin-left: em(5);
+      padding-bottom: em(8);
+
+      &:focus {
+        box-shadow: none;
+      }
     }
   }
-
 }
