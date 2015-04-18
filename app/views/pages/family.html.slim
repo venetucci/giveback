@@ -12,9 +12,12 @@ section.body-content-container.wrap-container
           .highlight.highlight-color jeans
           |.
     .family-content-text
-      = image_tag "michelle.png", class: "michelle"
+      = link_to image_tag("michelle.png", class: "michelle"), "http://twitter.com/mvenetucci",
+        target: "_blank"
       | and
-      = image_tag "julian.png", class: "julian"
+      = link_to image_tag("julian.png", class: "julian"),
+        "http://twitter.com/jatescher",
+        target: "_blank"
       | met while attending the University of Washington in 2009 after being set-up by their mutual friend, Seihyun. She still takes all the credit for their relationship. The two moved to the Bay Area after graduating.
     .family-section-two
       .family-section-two-image
