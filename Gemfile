@@ -13,7 +13,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'bourbon', '~> 4.2.1'
 
 # Static pages
-gem 'high_voltage', '~> 2.2.1'
+gem 'high_voltage', '~> 2.3.0'
 
 # Grid framework
 gem 'neat', '~> 1.7.2'
@@ -38,7 +38,7 @@ group :development, :test do
   gem 'spring'
 
   # Testing framework
-  gem 'rspec-rails', '~> 3.0.0.beta2'
+  gem 'rspec-rails', '~> 3.2.1'
 
   # Testing matchers
   gem 'rspec-collection_matchers', '~> 1.1.2'
@@ -47,7 +47,7 @@ group :development, :test do
   gem 'capybara', '~> 2.4.4'
 
   # Code coverage
-  gem 'simplecov', '~> 0.9.2', require: false
+  gem 'simplecov', '~> 0.10.0', require: false
 
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.3.10'
