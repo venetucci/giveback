@@ -54,6 +54,15 @@ organizations = [{
   info_url: 'http://www.blackgirlscode.com',
   donation_url: 'http://www.blackgirlscode.com'
 }, {
+  name: 'Hillary Clinton Campaign',
+  description: "Aside from the fact that this country is long overdue for a 
+                female President, Hillary Clinton is one of the most qualified 
+                candidates out there.",
+  reason_to_donate: 'I want to support a female president',
+  slug: 'hillary-clinton',
+  info_url: 'https://www.hillaryclinton.com/',
+  donation_url: 'https://www.hillaryclinton.com/donate/'
+}, {
   name: 'Southern Poverty Law Center',
   description: 'The Southern Poverty Law Center is dedicated to fighting hate and bigotry and to seeking justice for the most vulnerable members of our society. 
                 Using litigation, education, and other forms of advocacy, the Center works toward the day when the ideals of equal justice and equal opportunity will be a reality.',
