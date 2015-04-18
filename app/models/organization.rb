@@ -4,6 +4,8 @@ class Organization < ActiveRecord::Base
   validates :info_url, presence: true
   validates :donation_url, presence: true
 
+  has_many :donations
+
   def to_param
     slug
   end
