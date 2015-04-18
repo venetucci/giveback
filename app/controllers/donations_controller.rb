@@ -4,6 +4,7 @@ class DonationsController < ApplicationController
     @donation = Donation.new(donation_params)
 
     if @donation.save
+      DonationMailer.new_donation_email(@donation).deliver_now
       redirect_to @donation.organization.donation_url
     else
       redirect_to :back
