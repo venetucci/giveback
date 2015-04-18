@@ -21,7 +21,7 @@
 .color-palette {
 
   @include media($medium-screen-up) {
-    background-image: url("color-palette-footer.png");
+    background-image: image-url("color-palette-footer.png");
     background-repeat: no-repeat;
     height: 40px;
     width: 25%;
