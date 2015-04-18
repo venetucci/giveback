@@ -34,10 +34,14 @@ button {
   color: $white;
   display: inline-block;
   font-weight: 500;
-  padding: em(5) em(10);
+  padding: em(7) em(10) em(4);
   transition: 0.3s ease-in-out;
 
   a {
+    color: $white;
+  }
+
+  &:hover {
     color: $white;
   }
 
@@ -50,9 +54,7 @@ button {
   margin-top: em(20);
 
   &:hover {
-    background-color: tint($action-color, 20%);
-    border-bottom: em(3) solid tint($dark-pink, 20%);
-    color: $white;
+    background-color: tint($action-color, 15%);
     cursor: pointer;
   }
 }
@@ -64,7 +66,7 @@ button {
   border-bottom: 0.1875em solid shade($base-dark-accent-color, 30%);
 
   &:hover {
-    background-color: shade($base-dark-accent-color, 15%);
+    background-color: tint($base-dark-accent-color, 10%);
     cursor: pointer;
   }
 }

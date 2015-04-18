@@ -106,10 +106,12 @@
 
   &-cta {
     @include main-button;
+    margin: 0 em(5) em(15);
 
-    &-addendum {
-      display: inline-block;
-      font-size: $base-font-size / 1.3;
+    &-blank {
+      @include secondary-button;
+      margin: 0 em(5) em(15);
     }
   }
+
 }

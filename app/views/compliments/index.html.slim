@@ -8,9 +8,9 @@
       a class="js-compliment-reloader" href="#" Hit me with a new compliment
 
     .compliment-cta
-      .compliment-cta-button
-        a href="/" OK, that's enough. I want to donate!
-      .send
-        a class="twitter popup js-compliment-share-url" href="#{@compliment.message_share_url}" Send someone a compliment
+      a href="/" class="compliment-cta-button"
+        | OK, that's enough. I want to donate!
+      a class="twitter popup js-compliment-share-url send" href="#{@compliment.message_share_url}" 
+        Send someone a compliment
         .send-icon
 = render 'twitter_share_js'

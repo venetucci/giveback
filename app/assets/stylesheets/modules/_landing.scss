@@ -63,34 +63,8 @@
     text-align: center;
 
     a {
-      border-bottom: 1px solid $white;
-      color: $white;
-      display: inline-block;
-      line-height: 0.97em;
-      margin: 0.2em auto;
-      text-shadow: /* stroke around*/
-        0 0 1px $teal,
-        0 0 1px $teal,
-        0 0 2px $teal,
-        0 0 2px $teal,
-        0 0 2px $teal,
-        0 0 2px $teal,
-        0 0 2px $teal,
-        0 0 2px $teal,
-        0 0 2px $teal,
-        0 -5px 0 $teal, /* clear vertically*/
-        0 -1px 0 $teal,
-        0 -2px 0 $teal,
-        0 -2px 0 $teal,
-        0 -4px 0 $teal,
-        0 -5px 0 $teal,
-        0 -6px 0 $teal
-        ;
-
-      &:hover {
-        border-bottom: 1px solid $action-color;
-        color: $action-color;
-      }
+      @include underline;
+      @include underline-descender;
     }
   }
 
@@ -138,11 +112,7 @@
     }
 
     a {
-      border-bottom: 1px solid $white;
-      color: $white;
-      display: inline-block;
-      line-height: 0.97em;
-      margin: 0.2em auto;
+      @include underline;
 
       &:hover {
         border-bottom: 1px solid $action-color;
