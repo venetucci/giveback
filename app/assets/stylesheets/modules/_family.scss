@@ -106,12 +106,20 @@
   display: inline-block;
   height: em(25);
   margin: 0 em(7) em(-6);
+
+  &:hover {
+    transform: rotate(17deg);
+  }
 }
 
 .julian {
   display: inline-block;
   height: em(25);
   margin: 0 em(4) em(-6);
+
+  &:hover {
+    transform: rotate(-17deg);
+  }
 }
 
 .family-section-three-image {
