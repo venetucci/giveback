@@ -12,6 +12,7 @@ RSpec.describe 'Submit donation form', type: :request do
     fill_in 'donation_personal_note', with: 'I donated :)'
     click_button 'Submit form and donate'
     expect(page).to have_content('We have a little announcement')
+    expect(ActionMailer::Base.deliveries).to_not be_empty
   end
 
   it 'returns back to the donation form if something goes wrong' do
