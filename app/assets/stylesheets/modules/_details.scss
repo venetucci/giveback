@@ -120,11 +120,16 @@
       border-left: 0;
       border-right: 0;
       border-top: 0;
-      margin-left: em(5);
+      margin-top: em(10);
       padding-bottom: em(8);
 
       &:focus {
         box-shadow: none;
+      }
+
+      @include media(medium-screen-up) {
+        margin-left: em(5);
+        margin-top: 0;
       }
     }
   }

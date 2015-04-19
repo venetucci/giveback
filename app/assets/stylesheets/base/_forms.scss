@@ -64,6 +64,11 @@ input[type="search"] {
   @include appearance(none);
 }
 
+input[type="submit"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;

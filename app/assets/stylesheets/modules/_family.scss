@@ -29,10 +29,12 @@
 
       background: image-url("julian-michelle.png");
       background-repeat: no-repeat;
-      background-size: 100%;
+      background-size: em(282);
       display: block;
       height: em(200);
       margin-bottom: em(30);
+      margin: 0 auto;
+      width: em(282);
 
       @include media($medium-screen-up) {
         @include span-columns(3 of 10);
@@ -123,12 +125,13 @@
 }
 
 .family-section-three-image {
-  @include span-columns(10 of 10);
   background: image-url("faces.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: em(282);
+  width: em(282);
   display: block;
-  height: em(350);
+  margin: 0 auto;
+  height: em(300);
 
   @include media($medium-screen-up) {
     @include span-columns(3 of 10);
@@ -136,7 +139,7 @@
     background-size: 100%;
     display: inline-block;
     height: em(210);
-    margin-top: em(40);
+    margin-top: em(30);
   }
 }
 
