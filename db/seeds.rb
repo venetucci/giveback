@@ -57,7 +57,8 @@ organizations = [{
   name: 'Hillary Clinton Campaign',
   description: "Aside from the fact that this country is long overdue for a 
                 female President, Hillary Clinton is one of the most qualified 
-                candidates out there.",
+                candidates out there. Note: You must be a U.S. citizen to donate
+                to this campaign. We're sorry, we don't make the rules!",
   reason_to_donate: 'I want to support a female president',
   slug: 'hillary-clinton',
   info_url: 'https://www.hillaryclinton.com/',
