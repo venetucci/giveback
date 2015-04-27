@@ -121,3 +121,24 @@
     }
   }
 }
+
+.featured-content {
+  background: $light-gray;
+  border-radius: $base-border-radius;
+  font-size: 12px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.featured-content-tag {
+  background: shade($base-dark-accent-color, 20%);
+  border-radius: 3px;
+  color: $white;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 17px;
+  margin-left: 190px;
+  margin-top: -42px;
+  padding: 2px 7px;
+  position: absolute;
+}
