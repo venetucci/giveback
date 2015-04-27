@@ -48,7 +48,7 @@ organizations = [{
   sort_order: 0,
   featured_content: 'All donations made in our name are currently accruing towards 
                      an endowed scholarship that we set up. In the future, this scholarship will
-                     be awarded to a young woman interested in STEM fields.'
+                     be awarded to young women interested in STEM fields.'
 },{
   name: 'Black Girls Code',
   description: "Black Girls Code's mission is to increase the number of women of color in the digital space by empowering girls of color
