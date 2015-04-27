@@ -13,8 +13,8 @@ Tell these great organizations to [take your money](http://i3.kym-cdn.com/photos
 
 ### Featured Organization:
 
-We recently set up a fund that will turn into an endowed scholarship for a young
-woman interested in STEM fields.
+We recently set up a fund that will turn into an endowed scholarship for young
+women interested in STEM fields.
 
 ![Featured](app/assets/images/featured-org.png)
 
