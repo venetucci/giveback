@@ -17,6 +17,10 @@ RSpec.describe Organization, type: :model do
     expect(Organization.new(donation_url: nil)).to have(1).error_on(:donation_url)
   end
 
+  it 'fails validation when no sort_order' do
+    expect(Organization.new(sort_order: nil)).to have(1).error_on(:sort_order)
+  end
+
   it 'uses slug as param' do
     expect(Organization.new(slug: 'url').to_param).to eq('url')
   end

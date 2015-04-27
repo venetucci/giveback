@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150418193801) do
+ActiveRecord::Schema.define(version: 20150427002238) do
 
   create_table "compliments", force: :cascade do |t|
     t.string   "message",    default: "", null: false
@@ -39,6 +39,8 @@ ActiveRecord::Schema.define(version: 20150418193801) do
     t.string   "donation_url",     default: "", null: false
     t.datetime "created_at",                    null: false
     t.datetime "updated_at",                    null: false
+    t.integer  "sort_order",       default: 0,  null: false
+    t.string   "featured_content", default: "", null: false
   end
 
 end
