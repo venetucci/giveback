@@ -11,6 +11,13 @@ Tell these great organizations to [take your money](http://i3.kym-cdn.com/photos
 
 ![Landing](app/assets/images/landing-giveback.png)
 
+### Featured Organization:
+
+We recently set up a fund that will turn into an endowed scholarship for a young
+woman interested in STEM fields.
+
+![Featured](app/assets/images/featured-org.png)
+
 ![Compliments](app/assets/images/compliment-me.gif)
 
 ![Error](app/assets/images/error-page.gif)
