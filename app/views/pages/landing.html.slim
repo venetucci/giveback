@@ -27,7 +27,7 @@ section.organization
       | Feel free to donate in our name. Or not. Just tell these great organizations to 
       a href="http://i3.kym-cdn.com/photos/images/newsfeed/000/264/241/9e9.gif" take your money
       |.
-    - Organization.all.each do |organization|
+    - Organization.order(:sort_order).all.each do |organization|
       .organization-card
         h4.organization-card-title
           = organization.name

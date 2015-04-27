@@ -6,5 +6,6 @@ FactoryGirl.define do
     slug 'railsbridge'
     info_url 'http://www.railsbridge.com'
     donation_url 'http://www.railsbridge.org/donate'
+    sort_order 0
   end
 end
