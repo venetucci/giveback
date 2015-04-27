@@ -46,7 +46,7 @@ organizations = [{
   info_url: 'http://www.aw.org',
   donation_url: 'https://aw.myschoolapp.com/Page/Support/Make-a-Gift?siteId=693&ssl=1',
   sort_order: 0,
-  featured_content: 'All donations made in our name are currently accruing towards 
+  featured_content: 'All donations made in our name to Annie Wright are currently accruing towards 
                      an endowed scholarship that we set up. In the future, this scholarship will
                      be awarded to young women interested in STEM fields.'
 },{

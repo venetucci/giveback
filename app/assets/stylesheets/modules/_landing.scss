@@ -128,6 +128,7 @@
   font-size: 12px;
   margin-bottom: 15px;
   padding: 10px;
+  text-align: left;
 }
 
 .featured-content-tag {
@@ -142,3 +143,27 @@
   padding: 2px 7px;
   position: absolute;
 }
+
+.featured-progress-bar {
+  background: $light-gray;
+  border-left: 10px solid shade($base-dark-accent-color, 20%);
+  border-radius: 5px;
+  height: 6px;
+  margin-bottom: 35px;
+
+  &-current, &-goal {
+    color: shade($base-dark-accent-color, 20%);
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  &-current {
+    float: left;
+  }
+
+  &-goal {
+    float: right;
+  }
+}
+
