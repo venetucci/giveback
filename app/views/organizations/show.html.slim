@@ -14,6 +14,14 @@
           = @compliment.message
         span.details-hero-compliment-refresh.js-compliment-reloader
           = image_tag "refresh.png", class: "details-hero-compliment-refresh.js-compliment-reloader"
+      - if @organization.featured_content.present?
+        .featured-content
+          = @organization.featured_content
+        .featured-progress-bar
+          .featured-progress-bar-current
+            | current
+          .featured-progress-bar-goal
+            | goal: $25,000
       p
         | We’re about to send you off to the donations page. Don’t worry, you can always come back and donate to other
           organizations.

@@ -36,6 +36,11 @@ section.organization
             | featured
           .featured-content
             = organization.featured_content
+          .featured-progress-bar
+            .featured-progress-bar-current
+              | current
+            .featured-progress-bar-goal
+              | goal: $25,000
         .organization-card-text
           = organization.description
         = link_to organization.reason_to_donate, organization, class: 'organization-card-cta'
