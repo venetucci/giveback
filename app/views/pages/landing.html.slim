@@ -1,32 +1,27 @@
-= render "layouts/partials/global_nav"
-
 section.hero
   .body-content-container.wrap-container
-    h1.hero-title
-    h5.hero-subtitle
-      | A project by
-      = link_to image_tag("michelle.png", class: "michelle"), "http://twitter.com/mvenetucci",
-        target: "_blank"
-      | and
-      = link_to image_tag("julian.png", class: "julian"),
-        "http://twitter.com/jatescher",
-        target: "_blank"
-    .hero-main-text
-      p
-        | Gifts are awesome. We don’t mind receiving them. We’re actually really into giving them.
-      p
-        | That being said, we feel pretty fortunate in our life. Sometimes, the best gift is giving back. We know you love us a lot, so instead of giving us something for us, we’d love if you’d consider giving to an organization that we support.
-      p
-        | (If you don't know us, you can still donate. We won't tell.)
+    .hero-image
+      = image_tag("michelleandjulian.png")
+    .hero-content
+      h1.hero-title
+      .hero-main-text
+        p
+          ' Philanthropy is better than gifts. A project by
+          a> href="http://twitter.com/mvenetucci" target="_blank" Michelle
+          ' and
+          a href="http://twitter.com/jatescher" target="_blank" Julian
+          | .
+        a.hero-cta href="#" id="organizations-link" Organizations we like
 
-section.organization
-  .body-content-container
+section.organization id="organizations"
+  .wrap-container
     h3.organization-title
       | Organizations We Like
     h5.organization-subtitle
-      | Feel free to donate in our name. Or not. Just tell these great organizations to 
+      ' Feel free to donate in our name. Or not. Just tell these great organizations to
       a href="http://i3.kym-cdn.com/photos/images/newsfeed/000/264/241/9e9.gif" take your money
       |.
+  .wrap-container
     - Organization.order(:sort_order).all.each do |organization|
       .organization-card
         h4.organization-card-title
@@ -45,7 +40,7 @@ section.organization
           = organization.description
         = link_to organization.reason_to_donate, organization, class: 'organization-card-cta'
     .organization-missed
-      | Are we missing an awesome organization? 
+      ' Are we missing an awesome organization?
       a href="http://twitter.com/jatescher" target="_blank" Let us know
       | .
 

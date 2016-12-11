@@ -110,21 +110,23 @@
 
 .michelle {
   display: inline-block;
-  height: em(25);
-  margin: 0 em(7) em(-6);
+  height: em(45);
+  margin: 0 em(7) em(-10);
 
   &:hover {
     transform: rotate(17deg);
+    cursor: pointer;
   }
 }
 
 .julian {
   display: inline-block;
-  height: em(25);
-  margin: 0 em(4) em(-6);
+  height: em(45);
+  margin: 0 em(4) em(-10);
 
   &:hover {
     transform: rotate(-17deg);
+    cursor: pointer;
   }
 }
 
@@ -222,4 +224,3 @@
     opacity: 0;
   }
 }
-

@@ -6,4 +6,11 @@ $(document).ready(function() {
       $('.js-compliment-share-url').attr('href', data.compliment.message_share_url);
     });
   });
+
+  $('#organizations-link').click(function(e) {
+    e.preventDefault;
+    $('html, body').animate({
+      scrollTop: $("#organizations").offset().top
+    }, 500);
+  });
 });

@@ -1,8 +1,27 @@
 .hero {
   background-color: $white;
 
-  @include media($medium-screen-up) {
-    padding-top: em(50);
+  &-content {
+    text-align: left;
+    margin-top: 2.5rem;
+
+    @include media($medium-screen-up) {
+      @include span-columns(8 of 12);
+      @include shift(1);
+    }
+
+  }
+
+  &-image {
+    display: none;
+
+    @include media($medium-screen-up) {
+      float: left;
+      width: 145px;
+      margin-left: 10%;
+      margin-top: 0;
+      display: block;
+    }
   }
 
   &-title {
@@ -10,11 +29,10 @@
     background-repeat: no-repeat;
     background-size: em(140);
     color: $dark-gray;
-    display: block;
-    height: em(45);
+    //display: block;
+    height: em(30);
     margin-bottom: em(5);
-    margin: em(25) auto 0;
-    text-align: center;
+    margin: 0 auto;
     width: em(140);
 
     @include media($medium-screen-up) {
@@ -25,23 +43,25 @@
     }
   }
 
-  &-subtitle {
-    font-style: italic;
-    font-weight: 300;
-    margin-top: em(-20);
-    text-align: center;
-  }
-
   &-main-text {
-    @include span-columns(10 of 12);
-    @include shift(1);
-
-    padding: 0 0 em(50);
+    padding: 0 1rem em(50);
+    margin-top: 0;
+    text-size: 1.25em;
     text-align: center;
 
     @include media($medium-screen-up) {
-      @include span-columns(8 of 12);
-      @include shift(2);
+      padding: 0 0 em(50);
+    }
+
+  }
+
+  &-cta {
+    @include main-button;
+    margin-right: 1rem;
+    margin-top: 0;
+
+    @include media($medium-screen-up) {
+      margin-top: 1.25rem;
     }
   }
 
@@ -50,10 +70,16 @@
 .organization {
   background-color: $base-accent-color;
   display: block;
+  padding: 3rem 0;
+
+  @include media($medium-screen-up) {
+    padding: 5rem 0;
+  }
 
   &-title {
     color: $white;
     text-align: center;
+    font-size: 1.5em;
   }
 
   &-subtitle {
@@ -72,19 +98,17 @@
     background-color: $white;
     border-bottom: em(3) solid shade($white, 10%);
     border-radius: $base-border-radius;
-    float: none;
-    margin-bottom: $secondary-spacing;
+    margin-bottom: 1.5em;
     padding: em(25);
 
     @include media($medium-screen-up) {
-      @include span-columns(4 of 12);
-      @include shift(4);
-
-      float: none;
+      @include span-columns(6 of 12);
+      @include omega(2n);
     }
 
     &-title {
       margin: 0 0 em(15);
+      font-weight: 500;
     }
 
     &-text {
@@ -102,6 +126,7 @@
 
     color: $white;
     float: none;
+    text-align: center;
 
     @include media($medium-screen-up) {
       @include span-columns(4 of 12);
@@ -166,4 +191,3 @@
     float: right;
   }
 }
-
