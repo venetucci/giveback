@@ -22,7 +22,7 @@ section.organization id="organizations"
       a href="http://i3.kym-cdn.com/photos/images/newsfeed/000/264/241/9e9.gif" take your money
       |.
   .wrap-container
-    - Organization.order(:sort_order).all.each do |organization|
+    - Organization.where(hidden: false).order(:sort_order).all.each do |organization|
       .organization-card
         h4.organization-card-title
           = organization.name

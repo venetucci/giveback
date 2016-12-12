@@ -3,38 +3,23 @@
 .details-hero
   section.body-content-container.wrap-container
     h3.details-hero-title
-      ' So you're interested in donating to #{@organization.name}
-    .details-hero-link
-      ' I haven't made my decision yet, I want to #{link_to 'learn more', @organization.info_url}.
+      ' So, you're interested in donating to
+      ' #{link_to "#{@organization.name}", @organization.info_url}
 
     .details-hero-text
-      p.details-hero-compliment
-        | Have we mentioned...
-        span.js-compliment-message
-          = @compliment.message
-        span.details-hero-compliment-refresh.js-compliment-reloader
-          = image_tag "refresh.png", class: "details-hero-compliment-refresh.js-compliment-reloader"
-      - if @organization.featured_content.present?
-        .featured-content
-          = @organization.featured_content
-        .featured-progress-bar
-          .featured-progress-bar-current
-            | current
-          .featured-progress-bar-goal
-            | goal: $25,000
       p
-        | We’re about to send you off to the donations page. Don’t worry, you can always come back and donate to other
-          organizations.
-      p
-        | Before you go, would you like to let us know that you donated?
+        | We’re about to send you off to the donations page. Before you go, would you like to let us know that you donated?
+      .details-hero-caret
+        = link_to(image_tag("caret.png"), '#', id: 'organization-header-link')
+
 
 = form_for @donation, html: { id: 'form', class: 'details-form' } do |f|
   = f.hidden_field :organization_id
   section.body-content-container.wrap-container
-    h3.details-form-title
+    h3.details-form-title id='donation-form'
       | Leave Us A Note
     h5.details-form-subtitle
-      | This form is just for us. #{@organization.name} won’t see this information. All of this information is optional.
+      | This form is just for us. #{@organization.name} won’t see this information. All information is optional.
 
     .details-form-field
       .details-form-field-half
@@ -48,9 +33,6 @@
         = f.text_field :email, class: 'details-form-field-box'
 
     .details-form-field-full
-      = f.label :name, class: 'details-form-field-title'
-        | How much are you planning to donate?
-      = f.text_field :amount, class: 'details-form-field-box'
 
       = f.label :name, class: 'details-form-field-title'
         | Are you planning to leave a note in the donation? What will it be?

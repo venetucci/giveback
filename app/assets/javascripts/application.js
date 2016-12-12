@@ -13,4 +13,11 @@ $(document).ready(function() {
       scrollTop: $("#organizations").offset().top
     }, 500);
   });
+
+  $('#organization-header-link').click(function(e) {
+    e.preventDefault;
+    $('html, body').animate({
+      scrollTop: $("#donation-form").offset().top
+    }, 500);
+  });
 });
