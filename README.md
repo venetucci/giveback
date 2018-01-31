@@ -1,7 +1,3 @@
-![Giveback](app/assets/images/projectgiveback-title.png)
-
-![Color Palette](app/assets/images/color-palette.png)
-
 [![Code Climate](https://codeclimate.com/github/venetucci/giveback/badges/gpa.svg)] (https://codeclimate.com/github/venetucci/giveback)
 [![Build Status](https://travis-ci.org/venetucci/giveback.svg)](https://travis-ci.org/venetucci/giveback)
 
@@ -23,4 +19,3 @@ women interested in STEM fields.
 ![Error](app/assets/images/error-page.gif)
 
 Site built with Rails, [Bourbon](http://bourbon.io/), and Neat, and hosted on Heroku.
-
