@@ -3,8 +3,6 @@
 
 A project by [Julian](http://twitter.com/jatescher) and [Michelle](http://twitter.com/mvenetucci). Take a moment to [visit the website](http://julianandmichellegiveback.com).<br />
 
-Tell these great organizations to [take your money](http://i3.kym-cdn.com/photos/images/newsfeed/000/264/241/9e9.gif).
-
 ![Landing](app/assets/images/landing-giveback.png)
 
 ### Featured Organization:
