@@ -1,4 +1,4 @@
-[![Code Climate](https://codeclimate.com/github/venetucci/giveback/badges/gpa.svg)] (https://codeclimate.com/github/venetucci/giveback)
+[![Code Climate](https://codeclimate.com/github/venetucci/giveback/badges/gpa.svg)](https://codeclimate.com/github/venetucci/giveback)
 [![Build Status](https://travis-ci.org/venetucci/giveback.svg)](https://travis-ci.org/venetucci/giveback)
 
 A project by [Julian](http://twitter.com/jatescher) and [Michelle](http://twitter.com/mvenetucci). Take a moment to [visit the website](http://julianandmichellegiveback.com).<br />
