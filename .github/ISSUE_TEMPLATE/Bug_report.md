@@ -1,5 +1,5 @@
 ---
-name: "Bug report \U0001F41B"
+name: Bug report
 about: Create a report to help us improve
 custom_fields: []
 
@@ -7,9 +7,6 @@ custom_fields: []
 
 **Describe the bug**
 A clear and concise description of what the bug is.
-
-- [ ] Step 1
-- [ ] Step 2
 
 **To Reproduce**
 Steps to reproduce the behavior:
