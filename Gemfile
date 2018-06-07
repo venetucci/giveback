@@ -13,7 +13,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'bourbon', '~> 4.2.1'
 
 # Static pages
-gem 'high_voltage', '~> 2.3.0'
+gem 'high_voltage', '~> 3.1.0'
 
 # Grid framework
 gem 'neat', '~> 1.7.2'
