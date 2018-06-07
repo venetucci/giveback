@@ -10,7 +10,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 
 # Sass mixins
-gem 'bourbon', '~> 4.2.1'
+gem 'bourbon', '~> 5.0.0'
 
 # Static pages
 gem 'high_voltage', '~> 2.3.0'
