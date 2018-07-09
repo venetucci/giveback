@@ -19,4 +19,3 @@ women interested in STEM fields.
 ![Error](app/assets/images/error-page.gif)
 
 Site built with Rails, [Bourbon](http://bourbon.io/), and Neat, and hosted on Heroku.
-
