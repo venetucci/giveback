@@ -58,7 +58,7 @@ end
 
 group :production do
   # Use postgres in production
-  gem 'pg', '~> 0.18.1'
+  gem 'pg', '~> 1.2.2'
 
   # 12 factor rails
   gem 'rails_12factor', '~> 0.0.3'
