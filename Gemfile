@@ -64,5 +64,5 @@ group :production do
   gem 'rails_12factor', '~> 0.0.3'
 
   # web server
-  gem 'puma', '~> 2.11.1'
+  gem 'puma', '~> 3.12.4'
 end
