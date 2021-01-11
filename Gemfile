@@ -47,7 +47,7 @@ group :development, :test do
   gem 'capybara', '~> 2.4.4'
 
   # Code coverage
-  gem 'simplecov', '~> 0.10.0', require: false
+  gem 'simplecov', '~> 0.21.2', require: false
 
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.3.10'
